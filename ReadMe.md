@@ -1,5 +1,9 @@
 # sampleRepo
 
+## Screenshot
+
+<a href="url"><img src="https://user-images.githubusercontent.com/73298854/142966320-c25c923d-8321-4095-aa36-917e6b15e802.png" height="300" width="150" ></a> <a href="url"><img src="https://user-images.githubusercontent.com/73298854/142966335-a4610e31-73e3-4a5e-b179-64ba4139abf7.png" height="300" width="150" ></a>
+
 ## Requirement
   - Android Studio (Android Studio Arctic Fox | 2020.3.1 Patch 3)
   - NDK Version (23.1.7779620)
