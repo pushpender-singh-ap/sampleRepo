@@ -13,7 +13,6 @@
   - git clone https://github.com/pushpender-singh-ap/sampleRepo.git
   - cd sampleRepo
   - npm install
-  - cd..
   - run project react-native run-android
 
   
