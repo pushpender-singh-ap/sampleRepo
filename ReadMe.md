@@ -1,67 +1,97 @@
-# sampleRepo
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-## Screenshot
+# Getting Started
 
-</a> <a href="url"><img src="https://user-images.githubusercontent.com/73298854/142966335-a4610e31-73e3-4a5e-b179-64ba4139abf7.png" height="300" width="150" ></a>  <a href="url"><img src="https://user-images.githubusercontent.com/73298854/142966320-c25c923d-8321-4095-aa36-917e6b15e802.png" height="300" width="150" >
+> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-## Requirement
-  - Android Studio (Android Studio Arctic Fox | 2020.3.1 Patch 3)
-  - NDK Version (23.1.7779620)
-  - react-native-cli version (2.0.1)
+## Step 1: Start Metro
 
-## How To Use
-  - git clone https://github.com/pushpender-singh-ap/sampleRepo.git
-  - cd sampleRepo
-  - npm install
-  - run project react-native run-android
+First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-  
-## Possible Error
-  
-  ### Error 1
-   - npm cache clean --force (if you got this error use this command in root project files)
-      ```
-      C:\Users\rahul\Desktop\Project\React-Native\sampleRepo\node_modules\metro-hermes-compiler\src\emhermesc.js:81
-          throw ex;
-          ^
+To start the Metro dev server, run the following command from the root of your React Native project:
 
-      Error: EPERM: operation not permitted, lstat 'C:\Users\rahul\Desktop\Project\React-Native\sampleRepo\android\app\build\generated\res\react\release\drawable-       mdpi\src_assets_walkthrough_gothroughscreens1.jpg'
-      Emitted 'error' event on NodeWatcher instance at:
-      at NodeWatcher.<anonymous>
-     at FSReqCallback.oncomplete (fs.js:192:21) {
-     errno: -4048,
-     code: 'EPERM',
-     syscall: 'lstat',
-     path: 'C:\\Users\\rahul\\Desktop\\Project\\React-Native\\sampleRepo\\android\\app\\build\\generated\\res\\react\\release\\drawable-                 mdpi\\src_assets_walkthrough_gothroughscreens1.jpg'
-     }
-     npm ERR! code ELIFECYCLE
-     npm ERR! errno 7
-     npm ERR! sampleRepo@0.0.1 start: `react-native start`
-     npm ERR! Exit status 7
-     npm ERR!
-     npm ERR! Failed at the sampleRepo@0.0.1 start script.
-     npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+```sh
+# Using npm
+npm start
 
-     npm ERR! A complete log of this run can be found in:
-     npm ERR!
-     ```
-   
-  ### Error 2
-   - Error: spawn ./gradlew EACCES at Process (if you got this error use this command in root project files)
-      ```
-      chmod 755 android/gradlew
-      ```
-  
-  ### Error 3
-   - Open root folder sampleRepo > android > open local.properties > copy and paste below lines after `sdk.dir`
-   - ndk.dir=/Users/yourusername/Library/Android/sdk/ndk/23.1.7779620 (23.1.7779620 this version should be present in your ndk folder)
-   - [Download NDK](https://github.com/pushpender-singh-ap/sampleRepo#how-to-download-ndk)
-     ```
-      > Task :realm:stripDebugDebugSymbols FAILED
-     ```
-     
-## How to Download NDK
-  <a href="url"><img src="https://user-images.githubusercontent.com/73298854/130235971-e78d1c54-d2b9-4417-b592-4bd946cc8cc5.png" height="300" width="600" ></a>
-  <a href="url"><img src="https://user-images.githubusercontent.com/73298854/140639926-55dc2126-1416-41c8-a0dd-ba1f4f2b72b2.png" height="500" width="700" ></a>
-  
-### #happycoding
+# OR using Yarn
+yarn start
+```
+
+## Step 2: Build and run your app
+
+With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+
+### Android
+
+```sh
+# Using npm
+npm run android
+
+# OR using Yarn
+yarn android
+```
+
+### iOS
+
+For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+
+The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+
+```sh
+bundle install
+```
+
+Then, and every time you update your native dependencies, run:
+
+```sh
+bundle exec pod install
+```
+
+For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+
+```sh
+# Using npm
+npm run ios
+
+# OR using Yarn
+yarn ios
+```
+
+If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+
+This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+
+## Step 3: Modify your app
+
+Now that you have successfully run the app, let's make changes!
+
+Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+
+When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+
+- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
+- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+
+## Congratulations! :tada:
+
+You've successfully run and modified your React Native App. :partying_face:
+
+### Now what?
+
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+
+# Troubleshooting
+
+If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+# Learn More
+
+To learn more about React Native, take a look at the following resources:
+
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

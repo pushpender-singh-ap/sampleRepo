@@ -1,0 +1,18 @@
+current directory: /Users/enough/Desktop/Project/RN/AwesomeProject/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/enough/Desktop/Project/RN/AwesomeProject/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250307-29875-na285f sitelibdir\=./.gem.20250307-29875-na285f clean
+
+current directory: /Users/enough/Desktop/Project/RN/AwesomeProject/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250307-29875-na285f sitelibdir\=./.gem.20250307-29875-na285f
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Users/enough/Desktop/Project/RN/AwesomeProject/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250307-29875-na285f sitelibdir\=./.gem.20250307-29875-na285f install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20250307-29875-na285f
+
+current directory: /Users/enough/Desktop/Project/RN/AwesomeProject/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250307-29875-na285f sitelibdir\=./.gem.20250307-29875-na285f clean
