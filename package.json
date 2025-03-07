@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@react-native-community/cli-doctor": "^17.0.0",
     "react": "19.0.0",
     "react-native": "0.78.0",
     "react-native-executorch": "^0.3.0"
